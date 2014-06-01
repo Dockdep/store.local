@@ -1,0 +1,135 @@
+
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+tr{
+    height: 40px;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+}
+.grid-view
+{
+}
+
+.grid-view table.items
+{
+	background: #444;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #444 solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	font-size: 17px;
+    border-bottom: 1px #465866 solid;
+	padding: 0.3em;
+	color:#ccc;
+}
+
+.grid-view table.items th
+{
+	color: #0074a2;
+	background-color:#7C7C7C;
+	text-align: center;
+}
+
+.grid-view table.items th a
+{   font-size: 19px;
+    color: #0074a2;
+	text-decoration: none;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid-view table.items th a:hover
+{
+	color: #ccc;
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	background: #616060;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #616060;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #444;
+}
+
+.grid-view table.items tr:hover.selected
+{
+	background: #444;
+}
+
+.grid-view table.items tbody tr:hover
+{
+	background: #444;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+input{
+   background-color: #ccc;
+   height: 20px;
+    border: 2px inset #E7E4E4;
+}
+input:focus{border:2px inset #0074a2;}
