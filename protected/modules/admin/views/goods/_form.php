@@ -138,15 +138,19 @@
             $array=$this->categoryArray;
             $key=0;
 
-            function testCategory($array,$key){
+            function testCategory($array,$key, $model){
                 $num=count($array);
                 for($i=0; $i<$num; $i++){
                     if($array[$i]['parent_id']==$key){
                         echo "<ul>";?>
-                        <li><p><input type="checkbox" name="Goods[child_id]" value="<?=$array[$i]['prod_id']?>"><?=$array[$i]['name']?></p>
+                        <li><p><input type="checkbox"
+                                      <? if($model->child_id==$array[$i]['prod_id']){?>
+                                          checked
+                                       <?}?>
+                                      name="Goods[child_id]" value="<?=$array[$i]['prod_id']?>"><?=$array[$i]['name']?></p>
                         <?php
                         $key=$array[$i]['prod_id'];
-                        testCategory($array,$key);
+                        testCategory($array,$key, $model);
                         $key=$array[$i]['parent_id'];
                         echo "</li>";
                         echo "</ul>";
@@ -154,7 +158,7 @@
                 }
             }
 
-            testCategory($array,$key);?>
+            testCategory($array,$key,$model);?>
         </div>
 		<div class="all"><span class="hideAllList">Скрыть всё</span> | <span class="showAllList">раскрыть всё</span></div>
 	</div>
