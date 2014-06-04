@@ -7,13 +7,14 @@
         <div class="test_block3"></div>
         <div id="day"><?php echo CHtml::encode($categoryName[$data->child_id]['name']); ?></div>
         <div id="white">
-            <a href="#" alt="Купить часы - <?php echo CHtml::encode($data->title); ?>" title="Купить часы - <?php echo CHtml::encode($data->title); ?>">
-                <img width="145" height="208" src="<?php echo Yii::app()->request->baseUrl; ?>/css/images/50741-45-21.jpg" class="attachment-post-thumbnail wp-post-image" alt="5_1285684776" />
-            </a>
+
+                    <?php echo CHtml::link('<img src="'.Yii::app()->request->baseUrl.'/pic/'.$data->pic_min.'" alt="Купить часы -'. CHtml::encode($data->title).'" title="Купить часы -'. CHtml::encode($data->title).'"/>',array('/store/view', 'id' =>$data->id),
+                        array('title'=>"Купить часы -$data->title")); ?>
+
         </div>
         <div class="about_watch">
             <div id="about_ab">
-                <a href="#">Купить часы - <?php echo CHtml::encode($data->title); ?></a>
+                <?php echo CHtml::link('Купить часы -'. CHtml::encode($data->title),array('/store/view', 'id' =>$data->id)); ?>
             </div>
             <div id="about_cost"><?php echo CHtml::encode($data->price); ?><?php echo CHtml::encode($data->currency); ?></div>
             <div id="about_ab_excerpt">

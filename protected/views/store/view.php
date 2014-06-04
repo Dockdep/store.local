@@ -2,7 +2,7 @@
 <div class="watch_block2">
     <div class="watch_block_img_test">
         <div class="watch_block_img">
-            <a href="#" class="zoom" ><img src="#"  style=" max-width:280px; max-height:380px" /></a>
+            <a href="#" class="zoom" ><img src="<?php echo Yii::app()->request->baseUrl.'/picmax/'.$model->pic_min; ?>" alt=""/></a>
         </div>
     </div>
 
