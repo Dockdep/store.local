@@ -228,3 +228,6 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 .haveSubBlock{
     background-color: #727070;
 }
+.hideAllList, .showAllList{
+    cursor: pointer;
+}
