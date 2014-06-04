@@ -7,8 +7,7 @@
     <!--<meta http-equiv="X-UA-Compatible" content="IE=10" />-->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css"/>
 	<!--[if lte IE 8]><script src="<?php echo Yii::app()->request->baseUrl; ?>/css/js/oldies.js" charset="utf-8"></script><![endif]-->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/js/ul-drop.js"></script>
+    <script src="/css/js/jquery.min.js"></script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>

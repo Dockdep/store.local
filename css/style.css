@@ -182,8 +182,11 @@ body {margin-bottom:25px;
 #side_day{float:right;width:196px;margin-bottom:25px;}
 #side_ramka{float:left;width:190px; height:300px;border-radius:10px; background-color:#0f0c0b;}
 #day, #cost{height:45px;text-align:center;line-height:45px;font-family: Geneva, Arial, Helvetica, sans-serif;color:#A6A6A6;}
-#white{width:190px;height:208px;display:table-cell;vertical-align:middle;text-align:center;background-color:#fff;line-height:0px;}
-#white img{max-height:208px;max-width:190px;}
+.white_2{width:190px;height:208px;display:table-cell;vertical-align:middle;text-align:center;background-color:#fff;line-height:0px;position: relative;}
+.white_2 img{max-height:208px;max-width:190px;}
+.corner{ position: absolute;height: 100px;width: 100px;right: 0px;}
+.corner img{height:100%;width:100%;}
+
 /***************************start watch block************************************/
 .watch_block{width: 700px;float:right;}
 .watch_block_s{width: 925px;float:right;margin-top:25px;}

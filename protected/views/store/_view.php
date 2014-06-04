@@ -6,8 +6,10 @@
     <div class="test_block2">
         <div class="test_block3"></div>
         <div id="day"><?php echo CHtml::encode($categoryName[$data->child_id]['name']); ?></div>
-        <div id="white">
-
+        <div class="white_2">
+            <? if($data->stock) {?>
+                <div class="corner"><img src="/css/images/corner-ribbon.png" alt=""/></div>
+            <?}?>
                     <?php echo CHtml::link('<img src="'.Yii::app()->request->baseUrl.'/pic/'.$data->pic_min.'" alt="Купить часы -'. CHtml::encode($data->title).'" title="Купить часы -'. CHtml::encode($data->title).'"/>',array('/store/view', 'id' =>$data->id),
                         array('title'=>"Купить часы -$data->title")); ?>
 
